@@ -1,0 +1,13 @@
+Zadatak 1
+
+import matplotlib.pyplot as plt
+odeljenje=["7-1", "7-2", "7-3", "7-4", "7-5"]
+odlicni= [5,  7,    11,   14,   10]
+plt.figure(figsize=(10,7))
+plt.bar(odeljenje, odlicni, color="g")
+plt.title("Informatika")
+plt.xlabel("Odeljenje")
+plt.ylabel("Odlicni")
+plt.show()
+plt.close()
+
