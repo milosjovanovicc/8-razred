@@ -24,6 +24,31 @@ plt.close()
 
 ЗАДАТАК 3
 
+import pandas as pd
+Podaci = [["Petar",     "M", 55, 45],
+          ["Nina",     "Ž", 90, 85],
+          ["Jovana",     "Ž", 75, 90],
+          ["Ilija",     "M", 60, 80],
+          ["Darko",     "M", 30, 50]]
+
+Tabela = pd.DataFrame(Podaci)
+Tabela.columns=["Ime", "Pol", "Matematika", "Srpski"]
+print(Tabela)
+
+print("Podaci iz kolone Matematika:", Tabela["Matematika"])
+print("Ukupan broj poena je:", Tabela["Srpski"].sum())
+print("Prosečan broj poena je:", Tabela["Srpski"].mean())
+print("Najveći broj poena je:", Tabela["Srpski"].max())
+print("Najmanji broj poena je:", Tabela["Srpski"].min())
+print("Medijana je:", Tabela["Srpski"].median())
+
+matematika=Tabela.sort_values(by="Matematika", ascending=True)
+print(matematika)
+
+
+
+
+
 
 
 
