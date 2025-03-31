@@ -1,4 +1,4 @@
-Zadatak 1
+ЗАДАТАК 1
 
 import matplotlib.pyplot as plt
 odeljenje=["7-1", "7-2", "7-3", "7-4", "7-5"]
@@ -10,4 +10,20 @@ plt.xlabel("Odeljenje")
 plt.ylabel("Odlicni")
 plt.show()
 plt.close()
+
+ЗАДАТАК 2
+
+import matplotlib.pyplot as plt
+Učenici=[141675,   140846,  139523,   134092,   129346]
+Godina=["2014","2015", "2016", "2017", "2018"]
+plt.figure(figsize=(6,6))
+plt.pie(Učenici, labels=Godina)
+plt.title("Број ученика у редовним средњим школама")
+plt.show()
+plt.close()
+
+ЗАДАТАК 3
+
+
+
 
