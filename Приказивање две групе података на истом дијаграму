@@ -1,0 +1,17 @@
+Zadatak 1
+
+import matplotlib.pyplot as plt
+starosneGrupe    = ["0-2", "3-10", "11-65", "65+"]
+normalnaT_donja  = [34.7,  35.9,   35.2,    35.6]
+normalnaT_gornja = [37.3,  36.7,   36.9,    36.2]
+plt.bar(starosneGrupe, normalnaT_gornja, label="gornja granica")
+plt.bar(starosneGrupe, normalnaT_donja, label="donja granica")
+plt.ylim(34,39)
+plt.title("Normalna telesna temperatura po starosnim grupama")
+plt.xlabel("Starosne grupe (godine)")
+plt.ylabel("Temperatura (C)")
+plt.legend()
+plt.show()
+plt.close()
+
+
